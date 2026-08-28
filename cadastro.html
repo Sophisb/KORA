@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        KORA - Cadastro
+    </title>
+    <link rel="stylesheet" href="cadastro.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+           <div class="logo">
+<img src="Img/logo.png"KORA">
+</div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="recursos.html">
+                Recursos
+            </a>
+
+            <a href="profissionais.html">
+                Profissionais
+            </a>
+
+            <a href="planos.html">
+                Planos
+            </a>
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+        </nav>
+
+
+        <div class="acoes">
+
+            <a
+                href="login.html"
+                class="btn btn-outline"
+            >
+                Entrar
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- CADASTRO -->
+
+    <main class="main">
+
+        <section class="cadastro-card">
+
+
+            <div class="icone">
+                📝
+            </div>
+
+
+            <h1>
+
+                Crie sua conta no
+                <span>Kora</span>
+
+            </h1>
+
+
+            <p class="sub">
+
+                Preencha seus dados para começar
+                a utilizar a plataforma.
+
+            </p>
+
+
+            <form>
+
+
+                <!-- NOME E DATA -->
+
+                <div class="linha">
+
+
+                    <div class="campo">
+
+                        <label for="nome">
+                            Nome completo
+                        </label>
+
+                        <input
+                            id="nome"
+                            type="text"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="nascimento">
+                            Data de nascimento
+                        </label>
+
+                        <input
+                            id="nascimento"
+                            type="date"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- TELEFONE E PERFIL -->
+
+                <div class="linha">
+
+
+                    <div class="campo">
+
+                        <label for="telefone">
+                            Telefone
+                        </label>
+
+                        <input
+                            id="telefone"
+                            type="tel"
+                            placeholder="(00) 00000-0000"
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="perfil">
+                            Perfil
+                        </label>
+
+                        <select
+                            id="perfil"
+                            required
+                        >
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>
+                                Usuário
+                            </option>
+
+                            <option>
+                                Profissional da saúde
+                            </option>
+
+                            <option>
+                                Personal Trainer
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SENHA -->
+
+                <div class="linha">
+
+
+                    <div class="campo">
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <input
+                            id="senha"
+                            type="password"
+                            placeholder="Crie uma senha"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="confirmar">
+                            Confirmar senha
+                        </label>
+
+                        <input
+                            id="confirmar"
+                            type="password"
+                            placeholder="Digite novamente"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- TERMOS -->
+
+                <label class="termos">
+
+                    <input
+                        type="checkbox"
+                        required
+                    >
+
+                    <span>
+
+                        Li e concordo com os
+                        termos de uso e a
+                        política de privacidade
+                        do Kora.
+
+                    </span>
+
+                </label>
+
+
+                <!-- BOTÃO -->
+
+                <button
+                    type="submit"
+                    class="submit"
+                >
+
+                    Criar minha conta
+
+                </button>
+
+
+            </form>
+
+
+            <!-- LINK PARA LOGIN -->
+
+            <p class="login">
+
+                Já possui uma conta?
+
+                <a href="login.html">
+                    Entrar no Kora
+                </a>
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <strong>
+            KORA
+        </strong>
+
+        · Saúde mental e física conectadas.
+
+    </footer>
+
+
+</body>
+
+</html>

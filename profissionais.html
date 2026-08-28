@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KORA - Profissionais</title>
+<link rel="stylesheet" href="profissionais.css">
+</head>
+
+<body>
+
+  <header class="logo">
+    
+    <img src="Img/logo.png">
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="profissionais.html" class="active">Profissionais</a>
+      <a href="planos.html">Planos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="acoes">
+      <a href="login.html" class="btn btn-outline">Entrar</a>
+      <a href="cadastro.html" class="btn btn-primary">Cadastrar</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <span class="tag">SISTEMA DE PROFISSIONAIS</span>
+    <h1>Encontre o profissional ideal para <span>cuidar de você.</span></h1>
+    <p>
+      O Kora reúne diferentes profissionais da saúde em um único sistema,
+      permitindo que o usuário encontre especialistas, conheça seus perfis
+      e organize seus atendimentos.
+    </p>
+  </section>
+
+  <!-- ESPECIALIDADES -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Profissionais disponíveis</h2>
+      <p>
+        Encontre diferentes áreas de atendimento dentro do sistema Kora.
+      </p>
+    </div>
+
+    <div class="especialidades">
+
+      <article class="especialidade">
+        <div class="esp-icon">🧠</div>
+        <h3>Psicólogos</h3>
+        <p>
+          Acompanhamento emocional, saúde mental, autoconhecimento e bem-estar.
+        </p>
+      </article>
+
+      <article class="especialidade">
+        <div class="esp-icon">🩺</div>
+        <h3>Médicos</h3>
+        <p>
+          Atendimento e acompanhamento de diferentes necessidades de saúde.
+        </p>
+      </article>
+
+      <article class="especialidade">
+        <div class="esp-icon">🥗</div>
+        <h3>Nutricionistas</h3>
+        <p>
+          Orientação para alimentação equilibrada e desenvolvimento de hábitos saudáveis.
+        </p>
+      </article>
+
+      <article class="especialidade">
+        <div class="esp-icon">🏋️</div>
+        <h3>Personal Trainers</h3>
+        <p>
+          Orientação de exercícios, treinos personalizados e acompanhamento físico.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- BUSCA -->
+  <section class="section white">
+    <div class="section-title">
+      <h2>Encontre seu profissional</h2>
+      <p>Escolha uma especialidade e encontre profissionais disponíveis.</p>
+    </div>
+
+    <div class="busca">
+      <input type="text" placeholder="Digite o nome ou especialidade">
+
+      <select>
+        <option value="">Todas as especialidades</option>
+        <option>Psicólogo</option>
+        <option>Médico</option>
+        <option>Nutricionista</option>
+        <option>Personal Trainer</option>
+      </select>
+
+      <select>
+        <option value="">Modalidade</option>
+        <option>Presencial</option>
+        <option>Online</option>
+      </select>
+
+      <button class="buscar-btn" type="button">Buscar</button>
+    </div>
+
+    <div class="prof-grid">
+
+      <article class="prof-card">
+        <div class="foto">👩‍⚕️</div>
+        <h3>Profissional de Psicologia</h3>
+        <div class="tipo">Psicologia • Saúde Mental</div>
+        <p>
+          Acompanhamento voltado ao bem-estar emocional e à saúde mental.
+        </p>
+        <div class="info">📍 Atendimento online e presencial</div>
+        <a href="#" class="perfil">Ver perfil</a>
+      </article>
+
+      <article class="prof-card">
+        <div class="foto">👨‍⚕️</div>
+        <h3>Profissional de Medicina</h3>
+        <div class="tipo">Medicina • Saúde Geral</div>
+        <p>
+          Orientação e acompanhamento para cuidados gerais e prevenção.
+        </p>
+        <div class="info">📍 Atendimento online e presencial</div>
+        <a href="#" class="perfil">Ver perfil</a>
+      </article>
+
+      <article class="prof-card">
+        <div class="foto">👩‍⚕️</div>
+        <h3>Profissional de Nutrição</h3>
+        <div class="tipo">Nutrição • Alimentação</div>
+        <p>
+          Orientação para alimentação equilibrada e hábitos mais saudáveis.
+        </p>
+        <div class="info">📍 Atendimento online e presencial</div>
+        <a href="#" class="perfil">Ver perfil</a>
+      </article>
+
+      <!-- PERSONAL TRAINER DENTRO DO SISTEMA DE PROFISSIONAIS -->
+      <article class="prof-card">
+        <div class="foto">🏋️</div>
+        <h3>Personal Trainer</h3>
+        <div class="tipo">Educação Física • Exercícios</div>
+        <p>
+          Treinos personalizados, acompanhamento da evolução e orientação
+          para uma rotina de exercícios mais ativa.
+        </p>
+        <div class="info">📍 Atendimento presencial e acompanhamento online</div>
+        <a href="#" class="perfil">Ver perfil</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES DO SISTEMA -->
+  <section class="section sistema">
+    <div class="section-title">
+      <h2>Como funciona o sistema de profissionais?</h2>
+      <p>
+        O objetivo é conectar o usuário ao profissional de acordo com suas necessidades.
+      </p>
+    </div>
+
+    <div class="sistema-grid">
+
+      <article class="sistema-card">
+        <h3>🔎 Busca por especialidade</h3>
+        <p>
+          O usuário poderá pesquisar profissionais de acordo com a área
+          que precisa, incluindo psicologia, medicina, nutrição e educação física.
+        </p>
+        <ul>
+          <li>Filtros por especialidade</li>
+          <li>Busca por nome</li>
+          <li>Modalidade de atendimento</li>
+        </ul>
+      </article>
+
+      <article class="sistema-card">
+        <h3>👤 Perfil profissional</h3>
+        <p>
+          Cada profissional poderá apresentar suas informações para que
+          o usuário conheça melhor sua área de atuação.
+        </p>
+        <ul>
+          <li>Especialidade</li>
+          <li>Descrição profissional</li>
+          <li>Modalidades de atendimento</li>
+        </ul>
+      </article>
+
+      <article class="sistema-card">
+        <h3>📅 Agendamento</h3>
+        <p>
+          O sistema pode facilitar a organização dos atendimentos e
+          compromissos entre usuários e profissionais.
+        </p>
+        <ul>
+          <li>Escolha de horário</li>
+          <li>Agendamento de consultas ou treinos</li>
+          <li>Organização dos compromissos</li>
+        </ul>
+      </article>
+
+      <article class="sistema-card">
+        <h3>📈 Acompanhamento integrado</h3>
+        <p>
+          O atendimento profissional pode estar conectado aos demais
+          recursos do Kora, como metas, hábitos, exercícios, sono,
+          alimentação e hidratação.
+        </p>
+        <ul>
+          <li>Metas de saúde</li>
+          <li>Hábitos e evolução</li>
+          <li>Integração com a rotina do usuário</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CHAMADA PARA PROFISSIONAIS -->
+  <section class="chamada">
+    <h2>Você é um profissional da saúde?</h2>
+    <p>
+      Faça parte do sistema de profissionais do Kora. A plataforma busca
+      ampliar a visibilidade de profissionais e facilitar a conexão com
+      pessoas que procuram cuidar melhor da saúde física e mental.
+    </p>
+    <a href="#">Quero fazer parte</a>
+  </section>
+
+  <footer>
+    <h3>KORA</h3>
+    <p>Saúde mental e física conectadas.</p>
+  </footer>
+
+</body>
+</html>

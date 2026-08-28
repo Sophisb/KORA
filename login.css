@@ -1,0 +1,438 @@
+:root {
+            --azul: #438df5;
+            --azul2: #2878e8;
+            --claro: #eaf3ff;
+            --fundo: #f4f8ff;
+            --branco: #ffffff;
+            --texto: #111827;
+            --suave: #5b6778;
+            --borda: #dfe9f7;
+            --sombra: 0 10px 30px rgba(38, 82, 135, 0.09);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo img{
+        height:65px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--fundo);
+            color: var(--texto);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            min-height: 92px;
+            padding: 0 clamp(24px, 7vw, 110px);
+
+            background: rgba(255, 255, 255, 0.97);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
+
+            border-bottom: 1px solid var(--borda);
+
+            box-shadow: 0 4px 18px rgba(38, 82, 135, 0.06);
+        }
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            gap: 9px;
+
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            font-size: 34px;
+        }
+
+        .logo-text {
+            color: var(--azul);
+
+            font-size: 24px;
+            font-weight: 800;
+
+            letter-spacing: 1.2px;
+        }
+
+        /* MENU */
+
+        nav {
+            display: flex;
+
+            gap: 30px;
+
+            margin-left: auto;
+        }
+
+        nav a {
+            color: var(--texto);
+
+            text-decoration: none;
+
+            font-size: 15px;
+            font-weight: 700;
+
+            padding: 8px 0;
+
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--azul);
+        }
+
+        /* BOTÃO CADASTRO */
+
+        .acoes {
+            display: flex;
+
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 11px 22px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            border: 2px solid var(--azul);
+        }
+
+        .btn-outline {
+            color: var(--azul);
+
+            background: #ffffff;
+        }
+
+        /* ÁREA PRINCIPAL */
+
+        .main {
+            min-height: calc(100vh - 92px);
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 55px 20px;
+
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(67, 141, 245, 0.11),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 85% 80%,
+                    rgba(67, 141, 245, 0.08),
+                    transparent 30%
+                ),
+
+                var(--fundo);
+        }
+
+        /* CARD DE LOGIN */
+
+        .login-card {
+            width: 100%;
+
+            max-width: 460px;
+
+            padding: 42px 38px;
+
+            background: var(--branco);
+
+            border: 1px solid var(--borda);
+
+            border-radius: 25px;
+
+            box-shadow: var(--sombra);
+        }
+
+        /* ÍCONE */
+
+        .icone {
+            width: 70px;
+            height: 70px;
+
+            margin: 0 auto 20px;
+
+            border-radius: 20px;
+
+            background: var(--claro);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 34px;
+        }
+
+        /* TÍTULO */
+
+        h1 {
+            text-align: center;
+
+            font-size: 32px;
+
+            margin-bottom: 8px;
+        }
+
+        h1 span {
+            color: var(--azul);
+        }
+
+        .sub {
+            text-align: center;
+
+            color: var(--suave);
+
+            font-size: 14px;
+
+            margin-bottom: 30px;
+        }
+
+        /* FORMULÁRIO */
+
+        form {
+            display: grid;
+
+            gap: 18px;
+        }
+
+        .campo {
+            display: grid;
+
+            gap: 7px;
+        }
+
+        .campo label {
+            font-size: 14px;
+
+            font-weight: 700;
+        }
+
+        .campo input {
+            width: 100%;
+
+            padding: 14px;
+
+            border: 1px solid #d6e2f1;
+
+            border-radius: 10px;
+
+            outline: none;
+
+            background: #fbfdff;
+
+            font-size: 14px;
+        }
+
+        .campo input:focus {
+            border-color: var(--azul);
+
+            box-shadow:
+                0 0 0 3px rgba(67, 141, 245, 0.1);
+        }
+
+        /* OPÇÕES */
+
+        .opcoes {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            font-size: 13px;
+
+            color: var(--suave);
+        }
+
+        .lembrar {
+            display: flex;
+
+            gap: 7px;
+
+            align-items: center;
+        }
+
+        .lembrar input {
+            accent-color: var(--azul);
+        }
+
+        .esqueci {
+            color: var(--azul);
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        /* BOTÃO ENTRAR */
+
+        .submit {
+            padding: 14px;
+
+            border: none;
+
+            border-radius: 11px;
+
+            background: var(--azul);
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+        .submit:hover {
+            background: var(--azul2);
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 8px 20px rgba(67, 141, 245, 0.22);
+        }
+
+        /* DIVISOR */
+
+        .divisor {
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            color: #94a1b2;
+
+            font-size: 12px;
+
+            margin: 23px 0;
+        }
+
+        .divisor::before,
+        .divisor::after {
+            content: "";
+
+            height: 1px;
+
+            background: #e5edf7;
+
+            flex: 1;
+        }
+
+        /* CADASTRO */
+
+        .cadastro {
+            text-align: center;
+
+            color: var(--suave);
+
+            font-size: 14px;
+        }
+
+        .cadastro a {
+            color: var(--azul);
+
+            font-weight: 800;
+
+            text-decoration: none;
+        }
+
+        /* AVISO */
+
+        .seguro {
+            margin-top: 25px;
+
+            padding: 14px;
+
+            border-radius: 12px;
+
+            background: var(--claro);
+
+            color: #527092;
+
+            text-align: center;
+
+            font-size: 12px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            padding: 25px;
+
+            background: var(--azul);
+
+            color: white;
+
+            text-align: center;
+
+            font-size: 13px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 850px) {
+
+            header {
+                padding: 18px 5%;
+
+                flex-wrap: wrap;
+            }
+
+            nav {
+                order: 3;
+
+                width: 100%;
+
+                justify-content: center;
+
+                flex-wrap: wrap;
+
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 520px) {
+
+            .login-card {
+                padding: 32px 22px;
+            }
+
+            .opcoes {
+                align-items: flex-start;
+
+                gap: 10px;
+
+                flex-direction: column;
+            }
+        }
